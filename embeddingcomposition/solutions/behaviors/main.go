@@ -9,39 +9,27 @@ type Storer interface {
 	Inventory() []string
 }
 type Bicycle struct {
-	Basket []string
-}
-
-func (b *Bicycle) Stow(item string) {
-	b.Basket = append(b.Basket, item)
-}
-
-func (b *Bicycle) Inventory() []string {
-	return b.Basket
+	Trunk
 }
 
 type Subaru struct {
-	Trunk []string
+	Trunk
 }
 
-func (s *Subaru) Stow(item string) {
-	s.Trunk = append(s.Trunk, item)
+type Trunk struct {
+	Contents []string
 }
 
-func (s *Subaru) Inventory() []string {
-	return s.Trunk
+func (t *Trunk) Stow(item string) {
+	t.Contents = append(t.Contents, item)
+}
+
+func (t *Trunk) Inventory() []string {
+	return t.Contents
 }
 
 type Boeing struct {
-	CargoHold []string
-}
-
-func (b *Boeing) Stow(item string) {
-	b.CargoHold = append(b.CargoHold, item)
-}
-
-func (b *Boeing) Inventory() []string {
-	return b.CargoHold
+	Trunk
 }
 
 func main() {

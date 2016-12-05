@@ -17,7 +17,6 @@ func main() {
 }
 
 func assertions(i interface{}) {
-
 	switch v := i.(type) {
 	case string:
 		fmt.Println("String found", v)

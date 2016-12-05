@@ -47,6 +47,11 @@ func main() {
 	fmt.Println("*************************")
 	inspectSlice(slice2)
 
+	slice2 = append(slice2, "Kiwi")
+	slice2 = append(slice2, "Lychee")
+	inspectSlice(slice2)
+	inspectSlice(slice1)
+
 	// Another slice of slice1. Showing index shortcuts
 	// [index:] takes everything from index to end
 	// Don't forget that slices and arrays are 0 indexed!
