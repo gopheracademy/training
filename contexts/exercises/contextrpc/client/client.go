@@ -2,9 +2,10 @@ package main
 
 import (
 	"bytes"
-	"contexts/exercises/contextrpc"
 	"log"
 	"net/http"
+
+	"github.com/gophertrain/material/contexts/exercises/contextrpc"
 
 	"github.com/gorilla/rpc/json"
 )

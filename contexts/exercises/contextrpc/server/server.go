@@ -1,9 +1,10 @@
 package main
 
 import (
-	"contexts/exercises/contextrpc"
 	"fmt"
 	"net/http"
+
+	"github.com/gophertrain/material/contexts/exercises/contextrpc"
 
 	"github.com/gorilla/rpc"
 	"github.com/gorilla/rpc/json"
