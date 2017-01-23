@@ -17,7 +17,7 @@ func main() {
 	var e1 example
 
 	// Display the value.
-	fmt.Printf("%+v\n", e1)
+	fmt.Printf("e1: %+v\n", e1)
 
 	// Declare a variable of type example and init using
 	// a struct literal.
@@ -28,7 +28,8 @@ func main() {
 	}
 
 	// Display the field values.
-	fmt.Println("Flag", e2.flag)
-	fmt.Println("Counter", e2.counter)
-	fmt.Println("Pi", e2.pi)
+	fmt.Println("e2: Flag", e2.flag)
+	fmt.Println("e2: Counter", e2.counter)
+	fmt.Println("e2: Pi", e2.pi)
+
 }
