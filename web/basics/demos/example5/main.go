@@ -35,7 +35,7 @@ func main() {
 		})
 
 		// Start the http server to handle the request.
-		http.ListenAndServe(":3000", m)
+		http.ListenAndServe(":4000", m)
 	}()
 
 	// Get the current time so we can time how long this request takes.
@@ -45,7 +45,7 @@ func main() {
 	call(100, func(i int) {
 
 		// Call into the running service we started above.
-		res, err := http.Get(fmt.Sprintf("http://localhost:3000/%d", i))
+		res, err := http.Get(fmt.Sprintf("http://localhost:4000/%d", i))
 		if err != nil {
 			log.Fatal(err)
 		}
