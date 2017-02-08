@@ -7,6 +7,7 @@ topic: Go
 
 # Your First PR
 ## Contributing to a Go OSS Project
+### @bketelsen @gopheracademy
 ---
 video: 
 
