@@ -63,5 +63,8 @@ topic: {Go, Kubernetes, Docker, Web, Distributed Systems}
 
 # Slide 
 
+???
+These are presenter notes, not shown in remark.js
+
 ---
 `
