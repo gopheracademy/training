@@ -353,5 +353,4 @@ Now when you want to work on a change, you can create a new branch, make your ch
 - [http://yourfirstpr.github.io](http://yourfirstpr.github.io)
 - [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
 - [https://www.thinkful.com/learn/github-pull-request-tutorial/](https://www.thinkful.com/learn/github-pull-request-tutorial/)
-t Etiquette
 
