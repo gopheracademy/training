@@ -1,13 +1,10 @@
 name: GRPC
-description: A high performance, open-source universal RPC framework
 level: Intermediate
 topic: Distributed Computing
+class: center, middle
+# GRPC
 
 ---
-name: What is GRPC
-video: 
-thumb:
-github:
 # What is GRPC
 
 > In gRPC a client application can directly call methods on a server application on a different machine as if it was a local object, making it easier for you to create distributed applications and services. As in many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. On the server side, the server implements this interface and runs a gRPC server to handle client calls. On the client side, the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
@@ -15,6 +12,27 @@ github:
 Taken directly from [GRPC Guides](http://www.grpc.io/docs/guides/)
 
 [GRPC Website](http://www.grpc.io/)
+
+---
+name: Simple Service Definition
+# Simple Service Definition
+
+Use protocol buffers to define your service.
+
+
+---
+name: Works across languages and platforms
+# Works across languages and platforms
+
+![gRPC client/server diagram](/distributed-systems/grpc/grpc-languages-platforms.png)
+
+---
+name: Start quickly and scale
+# Start quickly and scale
+
+--- 
+name: Bi-directional streaming and integrated auth
+# Bi-directional streaming and integrated auth
 
 ---
 name: Implementing RouteGuide

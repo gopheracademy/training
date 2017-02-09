@@ -2,13 +2,11 @@ name: Data Communication Protocols
 description: 
 level: Beginner
 topic: Distributed Computing
+class: center, middle
 # Data Communication Protocols
 
 ---
 name: TLV (Type Length Value)
-video: 
-thumb:
-github:
 # TLV (Type Length Value)
 
 Within data communication protocols, optional information may be encoded as a type-length-value or TLV element inside a protocol. TLV is also known as tag-length-value.
@@ -34,9 +32,6 @@ It is easier to generate XML from TLV to make human inspection of the data possi
 
 ---
 name: JSON
-video: 
-thumb:
-github:
 # JSON
 
 JSON is an open-standard format that uses human-readable text to transmit data objects consisting of attribute-value pairs. It is the most common data format used for asynchronous browser/server communication, largely replacing XML which is used by Ajax.
@@ -77,9 +72,6 @@ JSON is an open-standard format that uses human-readable text to transmit data o
 
 ---
 name: Protocol Buffers (protobuff)
-video: 
-thumb:
-github:
 # Protocol Buffers (protobuff)
 ## Protocol Buffers (protobuff)
 

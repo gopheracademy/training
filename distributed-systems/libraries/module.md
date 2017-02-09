@@ -2,12 +2,11 @@ name: Building your own consensus using Go libraries
 description: 
 level: Intermediate
 topic: Distributed Computing
+class: center, middle
+# Building Consensus from Existing Libraries
 
 ---
 name: HashiCorp Raft
-video: 
-thumb:
-github:
 # HashiCorp Raft
 
 [https://raft.github.io](raft)
@@ -28,9 +27,6 @@ We will use the HashiCorp raft library for our solution.
 
 ---
 name: Design Considerations - How many nodes?
-video: 
-thumb:
-github:
 # Design Considerations - How many nodes?
 
 There are a lot of good articles on how many nodes to have in a consensus cluster, like the one from [etcd](https://coreos.com/etcd/docs/latest/admin_guide.html#optimal-cluster-size)
@@ -38,9 +34,6 @@ There are a lot of good articles on how many nodes to have in a consensus cluste
 The short version is you need at least 3 for fault tolerance, and good practice is to always use odd numbers to avoid a split vote (Byzantine failures).
 ---
 name: Common mistakes
-video: 
-thumb:
-github:
 # Common mistakes
 
 - Reading from the finite state machine on a node that isn't the leader (this is a dirty read)
@@ -49,9 +42,6 @@ github:
 
 ---
 name: Code Review
-video: 
-thumb:
-github:
 # Code Review
 ## 
 
@@ -105,9 +95,6 @@ curl -XGET localhost:8180/key/foo
 
 ---
 name: Reading from a non-leader
-video: 
-thumb:
-github:
 # Reading from a non-leader
 
 This is an error, as you can only get a consensus read from the leader. However, we are nice enough to put the new leader in the header so you could write a client to redirect if needed.
@@ -145,9 +132,6 @@ github:
 
 ---
 name: Etcd Raft
-video: 
-thumb:
-github:
 # Etcd Raft
 ## Etcd Raft
 

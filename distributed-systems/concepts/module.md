@@ -2,12 +2,11 @@ name: Distributed Concepts
 description: Cover concepts associated with distributed computing.
 level: Intermediate
 topic: Distributed Computing
+class: center, middle
+# Concepts
 
 ---
 name: CAP Theorem
-video: 
-thumb:
-github:
 # CAP Theorum
 
 In theoretical computer science, the CAP theorem, also named Brewer's theorem after computer scientist Eric Brewer, states that it is impossible for a distributed computer system to simultaneously provide more than two out of three of the following guarantees: Consistency. Availability. Partition tolerance.
@@ -21,9 +20,6 @@ In theoretical computer science, the CAP theorem, also named Brewer's theorem af
 
 ---
 name: Gossip Protocols
-video: 
-thumb:
-github:
 # Gossip Protocols
 
 ## [HashiCorp member list](https://github.com/hashicorp/memberlist)
@@ -34,9 +30,6 @@ memberlist is eventually consistent but converges quickly on average. The speed 
 
 ---
 name: Consensus
-video: 
-thumb:
-github:
 # Consensus
 
 [ Wikipedia Consensus](https://en.wikipedia.org/wiki/Consensus_(computer_science))

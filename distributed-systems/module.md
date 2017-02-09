@@ -1,13 +1,13 @@
-name: Distributed Systems
-video: 
-description: 
+name: Introduction
+description: Introduction
 level: Intermediate
 topic: Distributed Computing
+class: center, middle
 
+# Introduction
+
+---
 name: Why Distributed Systems
-video:
-description: 
-level: 
 # Why Distributed Systems
 
 - Cost Savings
