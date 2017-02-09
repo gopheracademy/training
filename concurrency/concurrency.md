@@ -18,6 +18,7 @@ github:
 A goroutine is a function that is capable of running concurrently with other functions.
 
 Goroutines aren't threads. They're smaller, lighter, and less resource intensive. A goroutine only requires a few bytes of memory, compared to a thread. Each thread has a fixed stack size, so there's a finite limit to the number of threads you can run. In contrast, it's common to run millions of goroutines at once.
+
 ---
 name: Goroutines2
 video: 
@@ -30,10 +31,14 @@ To create a goroutine, simply prepend the "go" keyword before a function call.
 
 ### Create Goroutine
 ```
-	cd $GOPATH/src/github.com/gophertrain/material/concurrency/demos/goroutine/
+	cd $GOPATH/src/github.com/gopheracademy/training/concurrency/demos/goroutine/
 	go run main.go
 ```
 Why didn't that work?
+
+??? 
+Run the application and show that there's no output on the screen.  The main goroutine finishes and doesn't synchronize with the printing goroutine, which never gets a chance to complete.
+
 ---
 name: Goroutines3
 video: 
@@ -47,6 +52,7 @@ Goroutines execute concurrently. In this case, `main()` and `sayHello()` were ru
 To solve this problem you need to use some sort of communication or synchronization device to signal that a goroutine is complete.
 
 We typically do that with channels or waitgroups, depending on whether you need to return a value from the function you're running.
+
 ---
 name: Waitgroups
 video: 
@@ -66,6 +72,7 @@ WaitGroups are defined in the "sync" package in the standard library. They're a 
 WaitGroups are also especially powerful when combined with closures (anonymous functions)
 
 [Closure Example](https://golang.org/pkg/sync/#example_WaitGroup)
+
 ---
 name: Channels
 video: 
@@ -77,6 +84,7 @@ github:
 Channels are a typed conduit through which you can send and receive values.
 
 [Channel Overview](https://tour.golang.org/concurrency/2)
+
 ---
 name: Channels2
 video: 
@@ -90,6 +98,7 @@ By default channels are unbuffered -- sends on a channel will block until there 
 You can create a buffered channel- which allows you to control how many items can sit in a channel unread.
 
 [Buffered Channels](https://tour.golang.org/concurrency/3)
+
 ---
 name: Channels3
 video: 
@@ -101,6 +110,7 @@ github:
 You can signal that there are no more values in a channel by closing it. Receivers can test to see if a channel is closed during a read.
 
 [Closing Channels](https://tour.golang.org/concurrency/4)
+
 ---
 name: Channels4
 video: 
@@ -112,6 +122,7 @@ github:
 You can use a select statement to allow a goroutine to operate on multiple communication operations:
 
 [Select](https://tour.golang.org/concurrency/5)
+
 ---
 name: Blocking Channels
 video: 
@@ -123,6 +134,7 @@ github:
 If no operations inside a select statement can process, the select will block. To work around this problem, you can add a default statement to your select:
 
 [Select With Default](https://tour.golang.org/concurrency/6)
+
 ---
 name: Exercise-concurrency
 video: 
