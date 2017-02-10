@@ -3,6 +3,7 @@ description:
 level: Intermediate
 topic: Distributed Computing
 class: center, middle
+module-time: 10
 # Existing Solutions
 
 ---

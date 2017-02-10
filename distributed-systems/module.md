@@ -3,7 +3,7 @@ description: Introduction
 level: Intermediate
 topic: Distributed Computing
 class: center, middle
-
+module-time: 5
 # Introduction
 
 ---

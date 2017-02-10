@@ -3,6 +3,7 @@ description:
 level: Intermediate
 topic: Distributed Computing
 class: center, middle
+module-time: 120
 # Building Consensus from Existing Libraries
 
 ---
@@ -143,3 +144,8 @@ name: Etcd Raft
 - [source code](https://github.com/coreos/etcd/tree/master/raft)
 - [documentation](https://godoc.org/github.com/coreos/etcd/raft)
 
+---
+name: exercise
+# Exercise - 30 Minutes
+
+TODO: Building Consensus with Raft

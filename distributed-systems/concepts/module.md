@@ -3,6 +3,7 @@ description: Cover concepts associated with distributed computing.
 level: Intermediate
 topic: Distributed Computing
 class: center, middle
+module-time: 45
 # Concepts
 
 ---
@@ -38,4 +39,10 @@ name: Consensus
 - Agreeing on changes across systems
 - Distributed consensus
 - Raft, Paxos, Zab
+
+---
+name: exercise
+# Exercise - 30 Minutes
+
+TODO: Gossip Protocol
 

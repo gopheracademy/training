@@ -2,6 +2,7 @@ name: GRPC
 level: Intermediate
 topic: Distributed Computing
 class: center, middle
+module-time: 90
 # GRPC
 
 ---
@@ -109,5 +110,11 @@ TODO
 ---
 name: Bidirectional streaming RPC
 # Bidirectional streaming RPC
+
+TODO
+
+---
+name: exercise
+# Exercise - 30 Minutes
 
 TODO

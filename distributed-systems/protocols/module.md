@@ -3,6 +3,7 @@ description:
 level: Beginner
 topic: Distributed Computing
 class: center, middle
+module-time: 45
 # Data Communication Protocols
 
 ---
@@ -52,3 +53,8 @@ Protocol buffers are Google's language-neutral, platform-neutral, extensible mec
 - [Protocol Buffers](https://developers.google.com/protocol-buffers/)
 - [Protocol Buffers in Go Tutorial](https://developers.google.com/protocol-buffers/docs/gotutorial)
 
+---
+name: exercise
+# Exercise - 30 Minutes
+
+TODO: Protocol Buffers
