@@ -1,5 +1,5 @@
 name: Data Communication Protocols
-description: 
+description:
 level: Beginner
 topic: Distributed Computing
 class: center, middle
@@ -36,36 +36,7 @@ name: JSON
 
 JSON is an open-standard format that uses human-readable text to transmit data objects consisting of attribute-value pairs. It is the most common data format used for asynchronous browser/server communication, largely replacing XML which is used by Ajax.
 
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "isAlive": true,
-  "age": 25,
-  "address": {
-    "streetAddress": "21 2nd Street",
-    "city": "New York",
-    "state": "NY",
-    "postalCode": "10021-3100"
-  },
-  "phoneNumbers": [
-    {
-      "type": "home",
-      "number": "212 555-1234"
-    },
-    {
-      "type": "office",
-      "number": "646 555-4567"
-    },
-    {
-      "type": "mobile",
-      "number": "123 456-7890"
-    }
-  ],
-  "children": [],
-  "spouse": null
-}
-```
+<code src="distributed-systems/protocols/protocol.json" />
 
 #### Reference
 [JSON](https://en.wikipedia.org/wiki/JSON)
