@@ -24,13 +24,13 @@ Use protocol buffers to define your service.
 name: Works across languages and platforms
 # Works across languages and platforms
 
-![gRPC client/server diagram](/distributed-systems/grpc/grpc-languages-platforms.png)
+![gRPC client/server diagram](/training-assets/distributed-systems/grpc/grpc-languages-platforms.png)
 
 ---
 name: Start quickly and scale
 # Start quickly and scale
 
---- 
+---
 name: Bi-directional streaming and integrated auth
 # Bi-directional streaming and integrated auth
 
@@ -41,7 +41,7 @@ name: Implementing RouteGuide
 TODO
 
 ---
-name: 
+name:
 # Simple RPC
 
 TODO
