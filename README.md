@@ -20,8 +20,8 @@ Slides start with metadata about the module:
 ```
 class: center, middle
 name: Slide Name
-video: 
-description: 
+video:
+description:
 level: Beginner
 topic: Go
 
@@ -31,7 +31,7 @@ topic: Go
 
 ```
 
-Each slide is delineated by the content between three dashes `---`.  Key/Value pairs come before the first H1 (#) tag in the markdown content.  
+Each slide is delineated by the content between three dashes `---`.  Key/Value pairs come before the first H1 (#) tag in the markdown content.
 
 Speaker notes come after three question marks: `???`.  Content that appears after three question marks, but before the next set of three dashes is for speaker view only, and won't be displayed in the slideshow or on the `learn` app display page.
 
@@ -41,3 +41,6 @@ You can use remark.js styling helpers to control layout of the slide:
 [markdown](https://github.com/gnab/remark/wiki/Markdown)
 
 
+### Injecting Code
+
+<code src="path/relative/to/the/training/package/code.go" />
