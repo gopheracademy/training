@@ -28,7 +28,7 @@ In this section we’ll explore advanced techniques to enable concurrency in you
 name:Channels
 
 # Channels
-## Channel Refresherr
+## Channel Refresher
 
 *channels* are like pipes that connect goroutines, allowing them to send data back and forth.
 
