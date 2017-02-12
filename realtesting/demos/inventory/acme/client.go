@@ -1,6 +1,6 @@
 package acme
 
-import "github.com/gopheracademy/code/goteam/solutions/inventory"
+import "inventory"
 
 // Compile-time proof of interface implementation
 var _ inventory.SupplierService = (*AcmeClientService)(nil)

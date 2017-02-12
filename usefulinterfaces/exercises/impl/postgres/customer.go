@@ -1,6 +1,6 @@
 package postgres
 
-import "github.com/gophertrain/modules/usefulinterfaces/includes/impl"
+import "github.com/gopheracademy/code/usefulinterfaces/includes/impl"
 
 // CustomerService implements the CustomerGetter interface
 type CustomerService struct {

@@ -2,14 +2,12 @@ package main
 
 import (
 	"database/sql"
+	"inventory/acme"
+	"inventory/postgres"
+	"inventory/transport/http"
+	"inventory/transport/rpc"
 	"log"
 	"net"
-
-	"github.com/gopheracademy/code/goteam/solutions/inventory/postgres"
-	"github.com/gopheracademy/code/goteam/solutions/inventory/transport/http"
-	"github.com/gopheracademy/code/goteam/solutions/inventory/transport/rpc"
-
-	"github.com/gopheracademy/code/goteam/solutions/inventory/acme"
 )
 
 func main() {

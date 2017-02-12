@@ -2,8 +2,7 @@ package postgres
 
 import (
 	"database/sql"
-
-	"github.com/gopheracademy/code/goteam/solutions/inventory"
+	"inventory"
 )
 
 // Compile-time proof of interface implementation

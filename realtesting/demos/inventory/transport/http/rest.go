@@ -1,19 +1,14 @@
 package http
 
 import (
+	"inventory"
+	"inventory/transport"
 	"net"
 	nh "net/http"
-
-	"github.com/gopheracademy/code/goteam/solutions/inventory"
-	"github.com/gopheracademy/code/goteam/solutions/inventory/transport"
 )
-
-// START OMIT
 
 // Compile-time proof of interface implementation
 var _ transport.InventoryTransporter = (*RESTService)(nil)
-
-// END OMIT
 
 type RESTService struct {
 	orderStore      inventory.OrderStorage
@@ -22,6 +17,7 @@ type RESTService struct {
 	supplierService inventory.SupplierService
 }
 
+// START OMIT
 func NewRESTService(orderStore inventory.OrderStorage, supplierStore inventory.SupplierStorage, supplierService inventory.SupplierService, productStore inventory.ProductStorage) *RESTService {
 	return &RESTService{
 		orderStore:      orderStore,
@@ -29,8 +25,9 @@ func NewRESTService(orderStore inventory.OrderStorage, supplierStore inventory.S
 		supplierStore:   supplierStore,
 		supplierService: supplierService,
 	}
-
 }
+
+// END OMIT
 
 func (svc *RESTService) Serve(l net.Listener) error {
 	server := &nh.Server{}

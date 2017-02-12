@@ -9,3 +9,7 @@ func main() {
 func sayHello() {
 	fmt.Println("hello")
 }
+func brian(s string) error {
+	fmt.Print(s)
+	return nil
+}

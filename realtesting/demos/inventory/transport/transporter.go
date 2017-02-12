@@ -1,9 +1,8 @@
 package transport
 
 import (
+	"inventory"
 	"net"
-
-	"github.com/gopheracademy/code/goteam/solutions/inventory"
 )
 
 type InventoryTransporter interface {

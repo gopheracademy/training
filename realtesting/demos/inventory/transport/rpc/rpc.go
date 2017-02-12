@@ -1,9 +1,8 @@
 package rpc
 
 import (
-	"github.com/gopheracademy/code/goteam/solutions/inventory"
-	"github.com/gopheracademy/code/goteam/solutions/inventory/transport"
-
+	"inventory"
+	"inventory/transport"
 	"net"
 	"net/rpc"
 )
