@@ -124,6 +124,7 @@ name:Interface
 PRO TIP:
 
 - Use https://github.com/josharian/impl to generate your implementation stubs
+
 ```shell
 go get github.com/josharian/impl
 
@@ -137,6 +138,7 @@ impl 's *Source' golang.org/x/oauth2.TokenSource > mocks/token.go
 To make it easy to isolate and test each individual package you should create mock implementations of each Interface you define in the domain package.  Keep all your mock implementations in a *mocks* package in the root of your application directory. 
 
 *impl* requires that the package with the interfaces can compile.  Make sure you have a compiling package before using it.
+
 ---
 name:Exercise One
 
@@ -144,6 +146,7 @@ name:Exercise One
 
 
 In the *usefulinterfaces/exercises* directory there's a folder called *impl*
+
 ```shell
 cd impl
 cat interface.go
@@ -165,6 +168,7 @@ name:Exercise One
 You should see output like this:
 
 <code src="usefulinterfaces/includes/impl/implout.txt">
+
 ---
 name:Exercise One
 
