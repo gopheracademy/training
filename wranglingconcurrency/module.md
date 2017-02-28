@@ -54,7 +54,7 @@ name:Unbuffered Channels
 
 # Unbuffered Channels
 
-<code src="wranglingconcurrency/includes/unbuffered/main.go">
+<code src="wranglingconcurrency/includes/unbuffered/main.go" />
 
 Will this work?
 
@@ -74,7 +74,7 @@ name:Unbuffered Channels
 
 Quick fix: Send in a goroutine
 
-<code src="wranglingconcurrency/includes/unbufferedfix/main.go">
+<code src="wranglingconcurrency/includes/unbufferedfix/main.go"/>
 
 ---
 name:Buffered Channels
@@ -86,7 +86,7 @@ name:Buffered Channels
 events := make(chan string, 1) // buffers up to 1 send
 ```
 
-<code src="wranglingconcurrency/includes/buffered/main.go">
+<code src="wranglingconcurrency/includes/buffered/main.go" />
 
 Not terribly practical, but proves the point of buffers.  A buffered channel can accept up to BUFFER SIZE writes before blocking, even when there is no receiver ready.
 
@@ -114,7 +114,7 @@ name:Channels as a Signal
 
 # Channels as as Signal
 
-<code src="wranglingconcurrency/includes/channels/signal/main.go">
+<code src="wranglingconcurrency/includes/channels/signal/main.go" />
 
 `main()` will block on the _<-done_ channel receive until the goroutine sends on the channel.  This signals that the goroutine is finished.
 
@@ -123,7 +123,7 @@ name:Channels as a Signal
 
 # Channels as a Signal
 
-<code src="wranglingconcurrency/includes/channels/close/main.go">
+<code src="wranglingconcurrency/includes/channels/close/main.go" />
 
 You can use *range* to iterate over values in a channel until it's closed.  An unclosed channel will block, breaking the range.  Close to signal you're done sending values.
 
@@ -141,7 +141,7 @@ wg.Add(1)
 go func() {
 	defer wg.Done()
 	fmt.Println("I'm done")
-}()
+}(
 wg.Wait()
 ```
 ---
@@ -157,7 +157,7 @@ name:sync.WaitGroup Example
 
 # sync.WaitGroup example
 
-<code src="wranglingconcurrency/includes/waitgroup/main.go">
+<code src="wranglingconcurrency/includes/waitgroup/main.go" />
 
 ---
 name:sync.WaitGroup
@@ -172,7 +172,7 @@ name:sync.WaitGroup With Channels
 
 # sync.WaitGroup example with Channel
 
-<code src="wranglingconcurrency/includes/waitgroupchan/main.go">
+<code src="wranglingconcurrency/includes/waitgroupchan/main.go" />
 
 ---
 name:sync.WaitGroup and Errors
@@ -188,7 +188,7 @@ name:Result Channel
 
 # Result channel
 
-<code src="wranglingconcurrency/includes/waitgroupchanerr/main.go">
+<code src="wranglingconcurrency/includes/waitgroupchanerr/main.go" />
 
 
 ---
